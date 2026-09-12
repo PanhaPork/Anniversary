@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f6);
+    color: #5a1633;
+    overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 50px 30px;
+    border-radius: 30px;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #ff3b81;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #d6336c;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* BUTTON */
+
+button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4f8b, #ff85ad);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 79, 139, 0.4);
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+/* MAIN */
+
+main {
+    padding: 40px 10%;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    margin: 30px auto;
+    border-radius: 25px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+}
+
+.card h2 {
+    color: #ff3b81;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.card p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo {
+    width: 250px;
+    background: #fff0f6;
+    padding: 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+}
+
+.photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.photo p {
+    margin-top: 10px;
+}
+
+/* GIFT */
+
+.gift-box {
+    font-size: 100px;
+    margin: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+}
+
+/* LETTER */
+
+.letter {
+    font-size: 18px;
+    line-height: 2;
+    padding: 20px;
+}
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
+
+/* HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 25px;
+    animation: floatUp 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .card {
+        padding: 25px 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+}
